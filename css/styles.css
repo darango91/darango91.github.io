@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #c4bfb5;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  border-bottom: 1px dotted #aaa;
+  color: #4875B4;
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+
+#cards {
+  background: #fefefe;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 3px 5px 20px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  width: 1000px;
+}
+#cards nav {
+  padding: 20px;
+  text-align: center;
+}
+#cards nav a {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 28px;
+  height: 48px;
+  line-height: 1.8;
+  text-align: center;
+  width: 48px;
+}
+#cards nav a[data-network="email"] {
+  color: #CCCCCC;
+}
+#cards nav a[data-network="linkedin"] {
+  color: #4875B4;
+}
+#cards nav a[data-network="twitter"] {
+  color: #00A0D1;
+}
+#cards nav a[data-network="googleplus"] {
+  color: #d34836;
+}
+#cards nav a[data-network="github"] {
+  color: #333333;
+}
+#cards nav a[data-network="stackoverflow"] {
+  color: #FF9100;
+}
+#cards .content {
+  border-radius: 5px;
+  height: 100%;
+  overflow: hidden;
+  padding: 50px 40px;
+  width: 100%;
+}
+#cards .content img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 15%;
+}
+#cards .content h1 {
+  display: block;
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 1.3em;
+  margin: 0 0 30px;
+  text-align: center;
+}
+#cards .content h1 strong {
+  font-weight: 700;
+  display: block;
+}
+#cards .content h2 {
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 2em;
+  margin: 0;
+}
+#cards .content p, #cards .content li {
+  text-align: justify;
+}
+#cards .content iframe {
+  vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+  body #cards {
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+  body #cards .content img {
+    width: 20%;
+    align: left;
+  }
+}
+@media (max-width: 600px) {
+  body #cards .content img {
+    width: 30%;
+  }
+  body #cards .content h1 {
+    font-size: 1.5em;
+    line-height: 1.1em;
+  }
+}
+@media (max-width: 500px) {
+  body #cards .content {
+    padding: 20px;
+  }
+  body #cards .content img {
+    width: 30%;
+  }
+  body #cards .content h1 {
+    font-size: 1em;
+    line-height: 1.1em;
+  }
+  body #cards .content h1 strong {
+    margin-top: 10px;
+  }
+  body #cards .content nav {
+    padding: 10px 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
